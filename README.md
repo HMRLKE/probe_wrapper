@@ -10,7 +10,7 @@ The aim of this repo is to easify the usage of the probing repository via:
 
 # Indirect deptree probing
 
-The ultimate goal is to perform indirect probing. Indirect in a sense that one is probing Morphological features but interprets the probes' behaviour via deptree relations when triggered with perturbations. We use both *random* and *deptree perturbations*. Random perturbations mean randomly <MASK>-ed input tokens, Deptree perturbations mean <MASK>-ed deptree neighbours relative to the *target* token
+The ultimate goal is to perform indirect probing. Indirect in a sense that one is probing Morphological features but interprets the probes' behaviour via deptree relations when triggered with perturbations. We use both *random* and *deptree perturbations*. Random perturbations mean randomly `<MASK>`-ed input tokens, Deptree perturbations mean `<MASK>`-ed deptree neighbours relative to the *target* token
 
 # Install
 
