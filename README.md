@@ -52,10 +52,8 @@ To generate dataset for English number_noun morphological tag, with *deptree per
 To generate dataset for English number_noun morphological tag, with *random perturbations*:
 
     python main.py --generate --tags English,number_noun --random
-To train the probes (diagnostic classifiers) on data with *deptree perturbations*
-	python main.py --probe_train --tags English,number_noun
-	
-
+To train the probes (diagnostic classifiers) on data with *deptree perturbations*:
+    python main.py --probe_train --tags English,number_noun
 
 Tag examples:
     English,number_noun
