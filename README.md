@@ -34,6 +34,13 @@ Install @juditacs's probing repo:
 
     python probing_all.py --pos_tag Noun --morph_tag Number
 
+## Functionality
+    download            Download the data needed for the dataset expansion.
+    generate            Generate the extended datasets.
+        a/ using conllu data
+        b/ applying random indices (--random)
+    probe               Wrapper function for the probing.
+    stats               Generate a statistics file from the model trainings (which models are saved in /home/workdir/...)
 
 ## Usage
 
