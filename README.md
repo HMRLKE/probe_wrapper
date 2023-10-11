@@ -52,8 +52,9 @@ To generate dataset for English number_noun morphological tag, with *deptree per
 To generate dataset for English number_noun morphological tag, with *random perturbations*:
 
     python main.py --generate --tags English,number_noun --random
-Train the probes (diagnostic classifiers) on data with *deptree perturbations*
-    python main.py --probe_train --tags English,number_noun
+To train the probes (diagnostic classifiers) on data with *deptree perturbations*
+	python main.py --probe_train --tags English,number_noun
+	
 
 
 Tag examples:
@@ -61,7 +62,7 @@ Tag examples:
     English,number_noun|French,case_propn
     All,All
 
-## Structure
+## Structure of the dataset
 
 The structure of the output files by rows:
 
@@ -83,7 +84,8 @@ More on the CoNNLL-U format: https://universaldependencies.org/format.html
 
 # TODO
 
-- [ ] Enumerate the deptree relations by their label in the derived dataset and UD. Calculate the KL between them.
+- [x] Enumerate the deptree relations by their label in the derived dataset and UD. Calculate the KL between them.
 - [ ] Collect and share the relevant literature with SZTAKI HLT
-- [ ] Prepare a new inference script to compare the two sets of probes in *various settings*
+- [x] Prepare a new inference script to compare the two sets of probes in *various settings*
 - [ ] Discuss the *various settings* (Target masking, Random perturbation, Deptree perturbation {All, by all labels, etc})
+- [ ] Discuss the *various settings* (the list of potentially interesting deptree relations to be *only* masked)
